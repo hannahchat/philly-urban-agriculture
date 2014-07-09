@@ -98,6 +98,8 @@ addLayer(L.tileLayer('http://banderkat.com:8888/v2/philly-bldgs/{z}/{x}/{y}.png'
 addLayer(L.tileLayer('http://banderkat.com:8888/v2/philly-land-use/{z}/{x}/{y}.png', {attribution:'Data from DVRPC'}), 
   L.mapbox.gridLayer('http://banderkat.com:8888/v2/philly-land-use.json'), 'Land Use', 'Land Use', 5);
 
+addLayer(L.tileLayer('https://b.tiles.mapbox.com/v3/hshackers1.LandInventory/{z}/{x}/{y}.png', {attribution:'Data from City of Philadelphia'}), null, 'FarmersMarket', 'FarmersMarket', 6);
+
 function addLayer(layer, infoLayer, legend, name, zIndex) {
     var gridControl = null;
     //var legendControl = null;
